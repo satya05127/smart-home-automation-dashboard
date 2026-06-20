@@ -1,1 +1,42 @@
 
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smart Home Automation Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Smart Home Automation Dashboard</h1>
+
+    <div class="container">
+
+        <div class="card">
+            <h2>Living Room Light</h2>
+            <button onclick="toggleDevice('light')">ON/OFF</button>
+            <p id="light-status">OFF</p>
+        </div>
+
+        <div class="card">
+            <h2>Fan</h2>
+            <button onclick="toggleDevice('fan')">ON/OFF</button>
+            <p id="fan-status">OFF</p>
+        </div>
+
+        <div class="card">
+            <h2>Air Conditioner</h2>
+            <button onclick="toggleDevice('ac')">ON/OFF</button>
+            <p id="ac-status">OFF</p>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+<div class="card">
+    <h2>Analytics</h2>
+    <p>Total Devices : 3</p>
+    <p id="active">Active Devices : 0</p>
+</div>
